@@ -4,8 +4,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo "This is Build stage."
-                // Intentional syntax error below
-                build 'PES1UG21CS185-1
+                build 'PES1UG21CS185-1'
                 sh 'g++ ./main/hello.cpp -o output'
                 echo "Build Stage Successful"
             }
