@@ -1,11 +1,11 @@
 pipeline {
     agent any
     stages {
-        stage('Build) {
+        stage('Build') {
             steps {
                 echo "This is Build stage."
                 build 'PES1UG21CS185-1'
-                sh 'g++ ./main/hello.cpp -o output'
+                sh 'g++ ./main/hello.cpp -o output
                 echo "Build Stage Successful"
             }
         }
